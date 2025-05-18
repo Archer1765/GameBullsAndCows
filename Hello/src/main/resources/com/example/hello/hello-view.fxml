@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="540.0" prefWidth="350.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hello.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TabPane prefHeight="540.0" prefWidth="350.0" styleClass="tab-pane-background" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+       <Tab text="Игра">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="318.0" prefWidth="407.0" styleClass="tab-pane-background">
+                  <children>
+                      <Label fx:id="welcomeText" layoutX="160.0" layoutY="11.0" prefHeight="49.0" prefWidth="140.0">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                      </Label>
+                      <Button fx:id="checkAttempUser" disable="true" layoutX="177.0" layoutY="80.0" onAction="#onButtonClickCheck" prefHeight="30.0" prefWidth="123.0" styleClass="button" text="Проверить">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                      </Button>
+                     <Label fx:id="attempsUser" alignment="TOP_CENTER" layoutX="36.0" layoutY="151.0" prefHeight="310.0" prefWidth="71.0">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                     <TextField fx:id="inputAttemp" disable="true" layoutX="14.0" layoutY="81.0" prefHeight="30.0" prefWidth="155.0" styleClass="text-field">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </TextField>
+                     <Button fx:id="startGame" layoutX="15.0" layoutY="16.0" mnemonicParsing="false" onAction="#onButtonClickStart" styleClass="button" text="Начать игру!">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Button>
+                     <Label layoutX="35.0" layoutY="126.0" text="Попытки">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="140.0" layoutY="126.0" text="Быки">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="currentBulls" alignment="TOP_CENTER" layoutX="144.0" layoutY="150.0" prefHeight="313.0" prefWidth="32.0">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="217.0" layoutY="126.0" text="Коровы">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="currentCows" alignment="TOP_CENTER" layoutX="232.0" layoutY="149.0" prefHeight="315.0" prefWidth="28.0">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="userInputNumber" layoutX="14.0" layoutY="56.0" text="Игрок, введи число:" textFill="#a9a9a9">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                     <ImageView fitHeight="33.0" fitWidth="37.0" layoutX="187.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" />
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+       <Tab fx:id="help" onSelectionChanged="#onSelectChangeGR" text="Справка">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="tab-pane-background">
+                  <children>
+                     <Label fx:id="gameRules" alignment="TOP_LEFT" layoutX="20.0" layoutY="14.0" prefHeight="442.0" prefWidth="262.0">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+     </tabs>
+   </TabPane>
+</VBox>
