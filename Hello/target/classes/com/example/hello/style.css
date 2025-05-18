@@ -1,0 +1,35 @@
+.tab-pane-background {
+    -fx-background-color: #FFFFFF;
+}
+.tab-header-background {
+    -fx-background: #87CEEB;
+}
+/*.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-border-color: blue;
+    -fx-border-width: 1;
+}*/
+.tab{
+    /*-fx-background-color:   -fx-background;*/
+    -fx-font-family: "Comic Sans MS";
+    -fx-background: #87CEFA;
+    -fx-font-size: 14px;
+}
+.button {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 16px;
+}
+/*изменение цвета при наведении на кнопку*/
+.button:hover {
+    -fx-background-color: #87CEFA;
+}
+.label {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 16px;
+}
+#gameRules {
+    -fx-font-size: 16px;
+}
+.text-field {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 16px;
+}
